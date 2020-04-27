@@ -1,0 +1,42 @@
+= CN1JailbreakDetection
+
+A library for https://www.codenameone.com[Codename One] to detect if the device is jailbroken/rooted. 
+
+This cn1lib is a thin wrapper around https://github.com/thii/DTTJailbreakDetection[DDTJailbreakDetection] on iOS
+and https://github.com/scottyab/rootbeer[rootbeer] on Android.  Other platforms don't support jailbreak detection.
+
+== License
+
+Apache 2.0
+
+== Platform support
+
+Currently supported on iOS and Android.  `isJailbroken()` just returns `false` elsewhere.
+
+== Installation
+
+Add the CN1JailbreakDetection.cn1lib to your project through Codename One settings.
+
+If you haven’t activated any cn1libs before in your Codename One projects, see https://www.codenameone.com/blog/automatically-install-update-distribute-cn1libs-extensions.html[this tutorial] which explains the process.
+
+== Usage
+
+[source,java]
+----
+if (JailbreakDetect.isJailbroken()) {
+	// device is jailbroken
+} else {
+	// device is probably not jailbroken.  BUT NOT 100% sure.
+}
+----
+
+== Further Reading
+
+. https://www.codenameone.com/[Codename One website]
+
+== Credits
+
+. Created by https://sjhannah.com[Steve Hannah].
+. Rootbeer created by https://github.com/scottyab[Scott Alexander-Brown].
+. DDTJailbreakDetection created by https://github.com/thii[Thi]
+

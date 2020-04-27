@@ -1,0 +1,5 @@
+*.jar
+build
+dist
+nbproject/private
+lib/CodenameOne_SRC.zip
